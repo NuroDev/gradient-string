@@ -39,6 +39,5 @@ Deno.test("A gradient with short hexcodes", () => {
 Deno.test("A gradient with an empty string", () => {
   const basic = gradient(["#ff5f6d", "#ffc371"]);
   const result = basic("");
-  console.log({ result });
   assertEquals(result, "\x1b[38;2;255;95;109m\x1b[0m");
 });
